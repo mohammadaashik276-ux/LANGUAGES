@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run C++ Program",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "main.cpp",
+                "-o",
+                "main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile the C++ program using g++"
+        },
+        {
+            "label": "Run Executable",
+            "type": "shell",
+            "command": "./main.exe",
+            "dependsOn": "Run C++ Program",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

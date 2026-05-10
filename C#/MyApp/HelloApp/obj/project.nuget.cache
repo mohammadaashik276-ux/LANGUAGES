@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "YPr2U0pwN0k=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\Python\\CODING\\C# CODING\\MyApp\\HelloApp\\HelloApp.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file C:\\Users\\USER\\Python\\CODING\\C# CODING\\MyApp\\HelloApp\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\USER\\Python\\CODING\\C# CODING\\MyApp\\HelloApp\\HelloApp.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\USER\\Python\\CODING\\C# CODING\\MyApp\\HelloApp\\HelloApp.csproj",
+      "targetGraphs": []
+    }
+  ]
+}
