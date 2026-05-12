@@ -1,4 +1,70 @@
-<!DOCTYPE html> /*DOCTYPE declaration defines the document type and version of HTML. It is not an HTML tag but an instruction to the web browser about what version of HTML the page is written in. In this case, it indicates that the document is an HTML5 document. */
+<!DOCTYPE html>
 <html>
-    
+    <head>
+        <title>
+            Project 9
+        </title>
+        <style>
+            body {
+                background-image: url(bg1.jpg);
+                background-size: cover;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                color: rgb(239, 8, 8);
+                text-align: center;
+                font-size: 50px;
+                font-family: pristine;
+                background-color: rgb(250, 250, 250, 0.5);
+            }
+            div {
+                text-align: left;
+                margin-top: 50px;
+                max-width: 800px;
+                margin: auto;
+            }
+            label {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(255, 255, 255);
+            }
+            input {
+                padding: 8px;
+                margin: 10px;
+                border-radius: 8px;
+                width: 400px;
+                border: none;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div
+            style="width: 400px;
+                    height: 100px;
+                    margin: auto;   /* Centers the div horizontally */">
+            <h1>
+                My Favorites
+            </h1>
+        </div>
+        <div>
+            <form>
+                <label>Your Name:</label>
+                <input type="text" placeholder="Enter your name"><br/>
+                <label>Your Phone Number:</label>
+                <input type="text" placeholder="Enter your phone number"><br/>
+                <label>Your Email:</label>
+                <input type="email" placeholder="Enter your email"><br/>
+                <label>Your Favorite Language:</label><br>
+                <input type="radio" id="html" value="html">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" value="css">
+                <label for="css">CSS</label>
+                <input type="radio" id="js" value="js">
+                <label for="js">JavaScript</label><br>
+                <input type="submit" value="Submit" style="width: 100px;">
+            </form>
+        </div>
+    </body>
 </html>
