@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Project 9
+        </title>
+        <style>
+            body {
+                background-image: url(bg1.jpg);
+                background-size: cover;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                color: rgb(239, 8, 8);
+                text-align: center;
+                font-size: 50px;
+                font-family: pristine;
+                background-color: rgba(250, 250, 250, 0.5);
+            }
+            div {
+                text-align: left;
+                max-width: 800px;
+                margin: auto;
+            }
+            label {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(255, 255, 255);
+            }
+            input {
+                padding: 8px;
+                margin: 10px;
+                border-radius: 8px;
+                width: 400px;
+                border: none;
+            }
+            p {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(255, 255, 255);
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="margin: auto;">
+            <h1>
+                My Favorites
+            </h1>
+        </div>
+        <div>
+            <form action="success.html">
+                <!-- This is for entering the name -->
+                <label>Your Name:</label>
+                <input type="text" placeholder="Enter your name"><br/>
+
+                <!-- This is for entering the phone number -->
+                <label>Your Phone Number:</label>
+                <input type="text" placeholder="Enter your phone number"><br/>
+
+                <!-- This is for entering the email -->
+                <label>Your Email:</label>
+                <input type="email" placeholder="Enter your email"><br/>
+
+                <!-- This is for entering the password -->
+                <label>Your Password:</label>
+                <input type="password" placeholder="Enter your password"><br/>
+
+                <!-- This is for selecting the favorite language -->
+                <p>Your Favorite Language:</p>
+                <input type="radio" id="html" value="html" name="favoriteLanguage">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" value="css" name="favoriteLanguage">
+                <label for="css">CSS</label>
+                <input type="radio" id="js" value="js" name="favoriteLanguage">
+                <label for="js">JavaScript</label><br>
+
+                <!-- This is for selecting the favorite color -->
+                <p>Your Favorite Color:</p>
+                <input type="radio" id="red" value="red" name="favoriteColor">
+                <label for="red">Red</label>
+                <input type="radio" id="blue" value="blue" name="favoriteColor">
+                <label for="blue">Blue</label>
+                <input type="radio" id="green" value="green" name="favoriteColor">
+                <label for="green">Green</label><br>
+
+                <!-- This is for selecting the favorite food -->
+                <p>Your Favorite Foods:</p>
+                <input type="checkbox" id="pizza" value="pizza" name="favoriteFood">
+                <label for="pizza">Pizza</label>
+                <input type="checkbox" id="burger" value="burger" name="favoriteFood">
+                <label for="burger">Burger</label>
+                <input type="checkbox" id="pasta" value="pasta" name="favoriteFood">
+                <label for="pasta">Pasta</label><br>
+
+                <!-- This is for submitting the form -->
+                <input type="submit" value="Submit" style="width: 100px;">
+                <input type="reset" value="Reset" style="width: 100px;">
+            </form>
+        </div>
+    </body>
+</html>
