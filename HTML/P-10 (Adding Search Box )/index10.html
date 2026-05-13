@@ -5,12 +5,39 @@
             Project 10
         </title>
         <style>
-            
+            body {
+                background-image: url('bg.jpg');
+                background-size: cover;
+            }
+            img {
+                display: block;     /* To center the image */
+                margin-left: auto;
+                margin-right: auto;
+                width: 20%;
+            }
+            h1 {
+                text-align: center;
+                color: rgb(9, 9, 9);
+                font-family: 'Arial', sans-serif;
+                font-size: 60px;
+            }
+            /* method = "get" is used to send the search query as a URL parameter */
+            form {
+                text-align: center;
+                margin-top: 20px;
+            }
         </style>
     </head>
     <body>
+        <img src="img.jpg">
         <h1>
-            
+            Search Here
         </h1>
+        <div>
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Search Google...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
     </body>
 </html>

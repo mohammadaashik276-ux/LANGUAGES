@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Project 11
+        </title>
+        <style>
+            /* Add your CSS styles here */
+            body {
+                background-image: url('bg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .my_text {
+                display: block;     /* To center the input box */
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 25px;
+                width: 55%;
+                padding: 20px 20px;
+                padding-left: 60px;
+                font-size: 18px;
+                border-radius: 30px;
+                border: 1px solid #fffefe;
+                background-image: url('search.png');
+                background-size: 40px;
+                background-repeat: no-repeat;   /* Prevent the image from repeating */
+                background-position: 10px center;
+                transition: 0.15s;
+            }
+
+            .my_text:focus{
+                outline: none;
+                box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            }
+
+            /* This will display the search icon when the input box is empty */
+            .my_text:hover {
+                border: 1px solid #000;
+            }
+
+            .logo {
+                display: block;     /* To center the image */
+                margin-left: auto;
+                margin-right: auto;
+                height: 100px;
+                width: 400px;
+                max-width: 80%;
+                margin-top: 200px;
+            }
+
+            .my_but {
+                padding: 10px 20px;
+                font-size: 18px;
+                border-radius: 10px;
+                border: 1px solid #fffefe;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: white;
+                cursor: pointer;
+            }
+
+            .my_but:hover {
+                border: 1px solid #000;
+            }
+
+            button {
+                padding: 10px 10px;
+                font-size: 18px;
+                border-radius: 10px;
+                border: 1px solid #fffefe;
+                margin-top: 20px;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: white;
+                cursor: pointer;
+            }
+
+            .my_but:hover,button:hover {
+                transform: scale(1.03);
+            }
+
+            button:hover {
+                border: 1px solid #000;
+            }
+
+            .button_container{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .my_but, button{
+                width: auto;
+                padding: 10px 20px;
+                margin-top: 0;
+                transition: 0.15s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="logo.png" alt="Logo" class="logo">
+
+        <!-- This form will submit the search query to Google's search engine -->
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" placeholder="Search Google..." class="my_text" name="q">
+                <div class="button_container">
+                    <input type="submit" value="Google Search" class="my_but">
+                    <button formaction="https://doodles.google">
+                        I'm Feeling Lucky
+                    </button>
+                </div>
+        </form>
+    </body>
+</html>
